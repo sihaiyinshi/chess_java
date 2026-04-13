@@ -5,9 +5,6 @@ import java.util.Scanner;
 
 public class engine {
 
-
-
-
     public static void main(String[] args) {
 
         engine e = new engine();
@@ -47,16 +44,9 @@ public class engine {
             showCurrentMoves(board);
             isWhite=!isWhite;
 
-
         }
 
-
-
-        /*
-        board.showMeInText();
-        board.showMeInGraph();
-        */
-
+        //board.showMeInText();
     }
 
 
@@ -124,8 +114,6 @@ public class engine {
         return to;
     }
 
-
-
     private static void promote(board board, boolean isWhite){
         if(board.canPromote(isWhite)) {
 
@@ -145,16 +133,10 @@ public class engine {
         board.showMoves();
     }
 
-
-
-
     private board init(){
         board board=new board();
         board.init();
         return board;
     }
-
-
-
 
 }
